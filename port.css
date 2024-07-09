@@ -1,5 +1,5 @@
 * {
-  margin: none;
+  margin-left: 0;
   padding: none;
   text-decoration: none;
   border: none;
@@ -9,9 +9,10 @@
   font-family: "Salsa", cursive;
 }
 body {
-  overflow-x: hidden;
+  overflow-x:hidden ;
   width:100vw;
 }
+
 
 :root {
   --bg-color: #081b29;
@@ -24,8 +25,7 @@ body {
   padding: 1.2rem 9%;
   position: fixed;
   top: 0px;
-  left:10px;
-  right:0px;
+  left:0px;
   width: 100%;
   background-color: #081b29;
   display: flex;
@@ -259,7 +259,7 @@ section {
 
 .inner2-Home {
   position: absolute;
-  bottom: 5rem;
+  bottom: 50px;
   left:10rem;
 }
 
@@ -686,6 +686,12 @@ section {
 
 /* adding media queries */
 
+@media(max-width:1300px){
+  #About{
+    height:100%;
+  }
+}
+
 @media ((min-width: 420px) and (max-width: 780px)) {
   .Journey-row .Journey-column-outer{
     width:100%;
@@ -698,6 +704,7 @@ section {
     opacity: .5;
   }
 
+
   #Journey,
   #Contact,
   #Skills {
@@ -705,8 +712,8 @@ section {
   }
 
   .header {
-    width: 97.5%;
-    left: 9px;
+    width: 100%;
+    left: 0px;
   }
 
   #Home .Home-content {
@@ -744,6 +751,16 @@ section {
 }
 
 @media (max-width: 420px) {
+  .header {
+    width: 100%;
+    left: 0px;
+  }
+  
+.inner2-Home {
+  position: relative;
+  bottom: 10px;
+  left:0px !important;
+}
   .Journey-row .Journey-column-outer{
     width:100%;
   }
@@ -762,10 +779,7 @@ section {
     height: 100%;
   }
 
-  .header {
-    width: 95.5%;
-    left: 9px;
-  }
+  
 
   #Home .Home-content {
     width: 80%;
