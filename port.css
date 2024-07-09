@@ -430,6 +430,21 @@ section {
   display:block !important;
 }
 
+.viewBtn{
+  text-decoration: none;
+ background-color: #00abf0;
+  color:black;
+  width:98%;
+  display:block;
+  border-radius: 1rem;
+  padding: 5px 0px;
+  margin:5px 0px;
+  text-align: center;
+  box-sizing:border-box !important;
+  display:none;
+}
+
+
 /* skills section */
 
 #Skills {
@@ -693,6 +708,13 @@ section {
 }
 
 @media ((min-width: 420px) and (max-width: 780px)) {
+  .Journey-column-dot:hover .hov-effect {
+    width: 0%;
+    display:none;
+  }
+  .viewBtn{
+    display:block;
+  }
   .Journey-row .Journey-column-outer{
     width:100%;
   }
@@ -751,10 +773,20 @@ section {
 }
 
 @media (max-width: 420px) {
+  .Journey-column-dot:hover .hov-effect {
+    width: 0%;
+    display:none;
+  }
+  
+  .viewBtn{
+    display:block;
+  }
+
   .header {
     width: 100%;
     left: 0px;
   }
+
   
 .inner2-Home {
   position: relative;
